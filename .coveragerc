@@ -1,0 +1,18 @@
+[paths]
+source =
+    ../app-name
+
+[run]
+branch = true
+source_pkgs =
+    app-name
+relative_files = true
+omit =
+    **/tests/*
+    **/migrations/*
+    **/tests.py
+
+
+[report]
+show_missing = true
+precision = 2

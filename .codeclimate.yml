@@ -1,0 +1,25 @@
+version: "2"
+checks:
+  method-complexity:
+    config:
+      threshold: 8
+  argument-count:
+    config:
+      threshold: 10
+  file-lines:
+    config:
+      threshold: 350
+  similar-code:
+    enabled: false
+plugins:
+  pep8:
+    enabled: true
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "conftest.py"
+  - "**/test/"
+  - "**/tests/"
+  - "**/__init__.py"
